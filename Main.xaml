@@ -1,0 +1,471 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1208,3513" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="41">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="41">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="716,3448" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="674,3356" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="outputdata" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtTable1" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtTable2" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="632,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="customer_df" WorkbookPath="C:\Users\quiet\Downloads\test_dataset\test_dataset\customer_df.xlsx">
+        <ui:ReadRange.DataTable>
+          <OutArgument x:TypeArguments="sd:DataTable">
+            <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">dtTable1</mca:CSharpReference>
+          </OutArgument>
+        </ui:ReadRange.DataTable>
+      </ui:ReadRange>
+      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="632,87" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="customer_df" WorkbookPath="C:\Users\quiet\Downloads\test_dataset\test_dataset\customer_df.xlsx">
+        <ui:ReadRange.DataTable>
+          <OutArgument x:TypeArguments="sd:DataTable">
+            <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">dtTable2</mca:CSharpReference>
+          </OutArgument>
+        </ui:ReadRange.DataTable>
+      </ui:ReadRange>
+      <ui:ClearDataTable DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="632,79" sap2010:WorkflowViewState.IdRef="ClearDataTable_1">
+        <ui:ClearDataTable.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">
+            <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">dtTable2</mca:CSharpReference>
+          </InOutArgument>
+        </ui:ClearDataTable.DataTable>
+      </ui:ClearDataTable>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="632,2891" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="598,2776" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">CurrentRow["transactions_name"].ToString()</mca:CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+              <Sequence sap:VirtualizedContainerService.HintSize="556,2553" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Whitepages - Official Site | Find People, Phone Numbers, Addresses &amp; More" sap:VirtualizedContainerService.HintSize="514,2461" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="63890258-53c0-46ab-9d49-71db55746272" Version="V2">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="480,2245" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="CategoryName" />
+                          <Variable x:TypeArguments="x:String" Name="AgeNumber" />
+                          <Variable x:TypeArguments="x:String" Name="Ages" />
+                          <Variable x:TypeArguments="x:String" Name="AgeNum">
+                            <Variable.Default>
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </Variable.Default>
+                          </Variable>
+                          <Variable x:TypeArguments="x:String" Name="Relative_1">
+                            <Variable.Default>
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </Variable.Default>
+                          </Variable>
+                          <Variable x:TypeArguments="x:String" Name="Relative1">
+                            <Variable.Default>
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </Variable.Default>
+                          </Variable>
+                          <Variable x:TypeArguments="x:String" Name="Relative2">
+                            <Variable.Default>
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </Variable.Default>
+                          </Variable>
+                          <Variable x:TypeArguments="x:String" Name="Relative3">
+                            <Variable.Default>
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </Variable.Default>
+                          </Variable>
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT desktopSearchBar'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="63890258-53c0-46ab-9d49-71db55746272" Version="V1">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.whitepages.com/" DesignTimeRectangle="608, 542, 279, 24" ElementType="InputBox" FriendlyName="'INPUT desktopSearchBar'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="64b5f1a4-b03b-4f1a-9839-458406cf4e27" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARsAAAAcCAYAAABRXxstAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKhSURBVHhe7ZlbTuswEEDvIvi40hWIbrw7CVtoNpAFtN+IX18/U8/YSd3SGpSeI0UQxx7bSHMyDn8MAEAHkA0AdAHZAEAXZtnsdrv4GwDA/UE2ANAFZAMAXUA2ANAFZAMAXUA2ANCFXyGbr2kw+4/JfMX7h/M5mWG/N/vsGqZuswM8Jc8nm9No5TKY6TPeO6x8RmQD8FCeTjbHA1UMwE+gZHM0Y368uCQAdRwZpqOZPq5P5rps1Fp0NWJ7p7mcQOZ+F9bs+672aY/r152eu+twjE/iPNl9iivb3B71vgC2SSabN5/c4yk2WFYTM4qm6G/bvi2bGFvE8ceffL6YvKItCGp9/iSx0f5Woy1u2GseI45L+/DrzZ7PYs7adB+ADTPL5v31r3rrWnyC1N+85Zvbca4KrkHLph5bt9cqhTLWEkmMZbI3xF36u4h2WbX48Yex0lbuE2CLzLJ5+/cSk09fNdmEhMyrmsA9ZLMU2+IqAdVPz9Uqm0SSjq6YVuOKdeTka5dx3Dyu3f0MbSv7BNggQjbtklhKlHqiXuInZeOozb8at0k2+RhX5cQKKo31VRBHKHge5DGqmkA1QlKVR4CWbyYl8nhU3idk+/1k4wUwJ35D3KZjVLq3cV38ed1RPKINYPucPxC/v9rE0ElmEyMlhE+crOLwCSorEC+DPIYeUyUISvSJ48Ra/Hx5gt8mm+NBVxNanG1xw17zWDqOI7aJ/Z3b9BwAW+YsG/ev75jkLhHCpd/SSgpROOkaTypR12STja0+L9ZSl8T1ssljhkvGaI+rY9Xk4ceptYe22rcwgO0iZfNt6okKAHBf2fhqhDc2AJTcLht7DJIVTPj2wkdPAKhxu2yKbyqIBgCWmWUDAPBIkA0AdAHZAEAXkA0AdMCY/y3ANcEVlm/MAAAAAElFTkSuQmCC" InformativeScreenshot="2163a94346a3068a465658950a94d9a0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Whitepages - Official Site | Find People, Phone Numbers, Addresses &amp;amp; More' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.Text>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">CurrentRow["transactions_name"].ToString()</mca:CSharpValue>
+                            </InArgument>
+                          </uix:NTypeInto.Text>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="63890258-53c0-46ab-9d49-71db55746272" Version="V1">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.whitepages.com/" DesignTimeRectangle="899, 530, 303, 48" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='pa-3' aaname='' /&gt;" Guid="94108090-fab7-4dcc-af1d-61f66001bd00" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATMAAAA0CAYAAADmKt9SAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARiSURBVHhe7dzNTtswAMDxvE0nngamfbwdV7jwCOzGBSE1hwq49E6KhAQqqRAHL/5I6zh2cSCw2Pv/JGuQtfno5H+dolHUdS2en58ZDAYj2SE7Vjw9PYnHx0ch/2yH+z2DwWBMZYR6Vby+voqXlxcBACk6+PUiDn6/ikKGbL1em80AkJaDH2sVtGKz2YiHhwezGQDS8u37gzj4uRHqBwCr1cpsBoC0zI5WTcxqUcifBFRVZTYDQFpmh1Vzq/msY3Z3d2c2A0BaZod3xAxA+ogZgCwQMwBZIGYAskDMAGSBmAHIAjEDkAViBiALxAxAFogZgCwQMwBZIGYAsvCFMavF8s+xOJ7zmzkAjG/cmK2X4vy4CZY9/iybjElfF7Nq7pzDcSnyTqh5bTvXbA9z/erf51wst79QuBKl5/Elv9YOCRotZjogbjTkJAuFRE/A86VO3Tj8wazm7Tm895h60ic3yc2by/a8AzHrXNeqJGhI0igxq5fn1gos1ifETE3Wfauw/ylmnrDHxKyh3pj4OACJGSFmsRPdColZMdi3NnK7fxINCJC7ErEFjqnpa9j9nRVEs1Kxx27/zvMGB725OvlGYO/DvX51/OZ82vOIPIberxP2yJi9780J+Lc+HrN2splvw9woeSLl21dvAu7XxsEfP38Y62XZ2b+Kamcy+yZ9f1v/efv1b831+XX20UZsyEopFPXImLEyQ4rGiVnUBI6ImdlmTy4Vp6ETy1qF+fbvD52lF9X+pPee15Dwhh7rblfnEh/z9ly9r1lEzPSbwZDjAdMwrZVZoxuJftwGaaO2jW04Zu2Kbjf2x0yvqnwjMgTBNwHnmqNfX62/2rMEYtY9//hjAVPy8ZiFVhg9cTHT+zMTSn494LbNzw6R75hmQvdu7d6OmS+K0T4jZuqxe/4tAjGzrwtI1Qg/ANCT7+1bwciYNWQo5ASTq6UPBUOxj+M5pi8WETFTK7mPhDb0JuBuj46ZPse9rxcxQ8ZGiJmkJ0V/cst4tBOxH5LgB81yAs+XzePdyS6P4wlAq5mspTuZndVK75iBCd4NiCeC6nluPJrnDrhF7t8S6ud0zi8yZmpfb8WVmCFjI8VM05OzO3aTPRyE7uMkExQ3dHJi75uw1v52wwmB55jdz8uax/sCorbpx2wnf+94VijU30VGyNpH93VoxMTMOjf/MM9X50TMkKdRYzYe/yQb57bzi8jA+FadAD7FNGMWWI1Uc3tVMW0yvKx4gK8zwZh5bkcB4A2Titn2sytuzwAMNNHPzABgGGIGIAvEDEAWiBmALBAzAFkgZgCyQMwAZIGYAcgCMQOQBWIGIAvEDEAWOjGrKv5PJIA0zQ4rHbO6rokZgGSpmP2sRbHZbMT9/b3ZDABpmR3dNzHbiOLi4kJcXl6Kq6srIb8+OzsTp6en4uTkhMFgMCY3ZJ9kp2SvZLdkv+TXxWKxENfX1+L29lbc3NyIsizFfD5nMBiMyQ7ZKdkr2S3Zr8ViIf4CcU9qlvxZhcAAAAAASUVORK5CYII=" InformativeScreenshot="bc23804d59d1cc3ff218a783db8b56af.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Whitepages - Official Site | Find People, Phone Numbers, Addresses &amp;amp; More' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.Text>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">CurrentRow["transactions_city"].ToString()</mca:CSharpValue>
+                            </InArgument>
+                          </uix:NTypeInto.Text>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NTypeInto>
+                        <uix:NClick ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="63890258-53c0-46ab-9d49-71db55746272" Version="V1">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.whitepages.com/" DesignTimeRectangle="1202, 530, 121, 48" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn--large btn--elev w-100 primary white--text right-bar' aaname='           Search         ' check:innerText='Search' /&gt;" Guid="ecd8759a-f568-4bbc-bf79-9a7c6e06d8df" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAA0CAYAAACn1zeBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMZSURBVHhe7ZxLjxJBEID5Nxr2Znz8Ddeoa4zxcfZo9C942IPZuycTCBy44MF4MiRiCOEEBDABLzzFIG+YcR9ld6d76OmdWXYTNDNTVckXmO6ZyaS/qpo5dWy5XIJitVq5folwwv0p1uu1wLIssG1bEJvNZsCZTqfi1/xPhJf5fA6LxUIkgi4+BjLiD22IHxzD3sEp7D06YwARcu68OIPXRzZ8/rbp4Fz8Rvr9hRR/wi7g0kl8VODyP31diKrnFe9Iv37vN8QfrKnaI8qrd2uYTCai4h3p1/aHTPqKpEeU289PYTQaiff8Rvrdn6zFL1mL/0PSI8pgMBAfeJr0AUmPON1uV7R4ko6ITqdD0rHRbrdJOjZIOkJIOkJIOkJIOkJIOkJIOkJIOkJIOkJIOkJI+g5oybWbVb3ng0ZopB+yBfWKjMe5/xuS/g8oLOXDeQRJvzrBl/5FPhgLc1F5MpD0qxNq6SaZrjxRhuv8D+xYjuuhJ41zPU8mdq0INqbmz3UcOadLd72G2PmH8togEYr2rhZVRYslgnmO3yvAEa8ljxlKvJk0IgyxrrhoTkYQqz80H3JeC+vI14QWWEW7xvyqTat8dR9dup5Y+rhzf0ZBCtWfTSWQMyYTI0iERrrClM8l+H3Zqzgnwggv6Xrbd7qIj0B1X72qnWsC2OJDJ52jS+YL7dmWteCJobd/Ua0XVbohalvVkvRdw9u0sdi6dC5MP9bbr44S48zz+8rYJv2y7Z2k7wpNjldctnX7zfPYJt3vy9/8kCPpO8RTmFH9HL2Fq1BCTXEZ7XirdIn5HEoySScCD0lHCElHCElHCElHCElHCElHCElHCElHCElHCElHCElHCElHCElHCG00hIxbz068pNPmgVHm5dux2EeO7/Dtlk7bhEaSm0+PIfmx7bFj5P4v2hA4Ytx4YsPjNz/gffo7tFotGA6HYifoWD6fh1KpBMViEfj/dDoNiUSCCDHJZBJSqRRks1nI5XJQr9eh1+uJ9znf8z3GBxqNBtRqNahWq1Aul4mQU6lUHJrNJvT7fRiPx6LKLcuCv+DcOIxkafZiAAAAAElFTkSuQmCC" InformativeScreenshot="be338f142148a646349bcc438a862e70.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Whitepages - Official Site | Find People, Phone Numbers, Addresses &amp;amp; More' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NClick>
+                        <Sequence sap:VirtualizedContainerService.HintSize="438,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">AgeNum</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">Relative1</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">Relative2</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">Relative3</mca:CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,1261" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <TryCatch.Try>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,1034" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="AgeNum2" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'View Details'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="63890258-53c0-46ab-9d49-71db55746272" Version="V1">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.whitepages.com/name/Gary-Cannon/Pricedale?fs=1&amp;searchedName=Gary%20Cannon&amp;searchedLocation=Pricedale" DesignTimeRectangle="1169, 720, 130, 40" ElementType="Text" FriendlyName="'View Details'" FullSelectorArgument="&lt;webctrl aaname='View Details' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='View Details' tag='DIV' type='' class='details-button primary--text' check:innerText='View Details' /&gt;" Guid="c40bfd95-0692-473a-9d44-be3c8e1da031" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAsCAYAAACg/sAZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANQSURBVHhe7ZyxceJgEIUpxR3QgiO7DWeU4RkKoARHFEAHJOQmxJEbsFOnunsaP/mx86Szxsh3Z71vZgf0I620ux8/GYsmBEPECJYzMZ6fn5v7+/tmsVgkZhJXV1fN3d1dO3ulEwMfXF9ft2KE+cDNAIKoHJ0YsCZSzBfMHg6QToxqTJgXmD0cIJ0Y+L0J80YdiBihI2IES8QIlogRLBEjWCJGsESMYIkYwRIxguWfEePt7a1ZrVbtvbfb7fvq/DgcDm0Pbm9vm5eXl3ZtvV63a+gP+vQdTCoGBoxcCBSsqAh4PR6PzXK5bI/RiO+Ew3Dx3c9CCdCL0+l0tvZjxIDxMN81GEVTBAj0N3eMITEYVew/wfr0m/8ZZrFjgL6iuJuMbdwUcBj6LQW64419zkvW9yPFcE3X3YE7CZqHJmJNdwxdr3nct8vdj0Pqa2yfGEDlwHlE1xGsQ2vT4L05ZA2tl3m1JidGvb979q+AnGQSMdzAdY3NduehUBSMNQ02QT9nHm0883CNx5UhMfQeNV8NrA+J8fr6aj9DMDdecTwkBs/RcM/+FZCTTCIGqIVxEFq8E6Nep2s4R4egxzc3N22jdFBDjRsjhh5TRq5pPRyerjn6hj4khuvLpUF+MpkYtfEsDK+kisGB4tgFr2UjccwBbTabNhfi6empe983oDFi8FwXen2fGFyvMUaM+gzuub8K8pLJxNCh73a77j2/caCKoccuapNwLoRAkx4fH9vP8R73w6tKWBkSg0PhZ32DZbAmN2AdKJ+nDv0zYgAVloFrLwXykcnEACyO27wWDqoYaAAagWNtSIXXISdyMy8bzPuqhJU+MXitPoMOdyinG7A+E3A1uuucGERzMO8lQD4yqRjaUFdEFQPUaxjaNKADZF69tg680ncfht5PB1GDzw1qTlzz8PBwtqYxRgytVwP3vBTIRyYVQwfvinBiALdlVjHYTL1W87GhfQyJ0ddsNxx9bqDnuKHi/Dp01jJWjEtKAZCTTCpG+L+IGMESMYIlYgRLxAiWiBEsESNYIkawRIxgiRjBYsXA3yzt9/v3ozBHrBj5q6V50/tXS/yrHZyQnWM+6J+zKR97x29wEqzBzwq2lcTPD24GlTMxQiARIxia5hfm9xPH8AKe5gAAAABJRU5ErkJggg==" InformativeScreenshot="4b28609e8db8c7db022cbb3fa76a8b13.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gary Cannon in Pricedale, PA - Address &amp;amp; Phone Number | Whitepages' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NClick>
+                              <uix:NGetText DisplayName="Get Text '60s'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="63890258-53c0-46ab-9d49-71db55746272" Version="V1">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.whitepages.com/name/Lynn-Carol-Gilson/Simpsonville-SC/PG9Rl7ADxz3" DesignTimeRectangle="499, 364, 52, 26" FriendlyName="'60s'" FullSelectorArgument="&lt;webctrl parentid='person-details-age' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='person-details-age' tag='DIV' type='' class='d-flex align-center' /&gt;" Guid="97b85112-6d7c-499d-b781-2187a59b98d4" InformativeScreenshot="1c8f88a69b995456ab37ca0ba2594016.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lynn Carol Gilson | Horizon Dr, Simpsonville, SC | Whitepages' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive" />
+                                </uix:NGetText.Target>
+                                <uix:NGetText.Text>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">AgeNum</mca:CSharpReference>
+                                  </OutArgument>
+                                </uix:NGetText.Text>
+                              </uix:NGetText>
+                              <uix:NGetText DisplayName="Get Text 'Matthew Brian Flint'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="63890258-53c0-46ab-9d49-71db55746272" Version="V1">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.whitepages.com/name/Gary-Cannon/Pittsburgh-PA/Po8MoVrvbNy" DesignTimeRectangle="521, 475, 179, 88" FriendlyName="'Matthew Brian'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='relatives' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='relatives' tag='DIV' class='expandable-card relative-card pa-4 pearl td-n card flat' aaname='' /&gt;" Guid="7c2f177f-8089-4596-873f-9a7accd655ae" ImageBase64="" InformativeScreenshot="ca9619f5d87c51a0da5889f40ea3e53b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gary Cannon | Plateau St, Pittsburgh, PA | Whitepages' /&gt;" SearchSteps="Selector, FuzzySelector" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="537, 491, 126, 40" ElementType="Text" FriendlyName="'Matthew Brian Flint'" FullSelectorArgument="&lt;webctrl aaname='Matthew Brian Flint' parentid='relatives' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Matthew Brian Flint' parentid='relatives' tag='DIV' type='' class='' check:innerText='Matthew Brian Flint' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIIAAAAsCAYAAACpFWBjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMhSURBVHhe7ZpdbqswEEbvcq5YF8lSiLKTKCuJ2EYl9pAnX3uM8cwwgLmlCaTfw1EbM8D8HEgF/fN8Ph0AEAEQEAEQEAEQEAEQEAEQOxOhc7dT5ep7Z2w7Bu21cn9PN9cZ2/YME6F1TeWLqC6uZQGa7n72MZVrHvb277ETEb5urqZecOb7kvgQEc6u9oOYHnIc1GoRHhejkdbQ9yTC2d2+8tpRB1zK6I5Qn/wVP1VwGOjp4ppZWQw+QIS4VnZXOCIjEZpHvDOIJvSEq6K+tzQsIYK+lTKR6Eri20IzjVtvHH4WQexniJm+ohJDPoZ0MVauxVomhLNE0MdNMY9US9xGeV/bvN9MbwIpXtYjc30Fhgh943gxASooJBiHxUVorzzxuF3sv/KOIAab7lQsjvLjDe2bHffJdSwdk9cgGIlgxKcBTww2f57vTRI+12f07wWYIuSh58DQ/JhsTHSyiZ7RoNaKoJogjxfyHN+x+ADC78Nx+1oaY03mw0hD5qiBpxjdBy2CRveG4vWxzX79LLYI/rNopmi+LQIVNNW4lSLINdU8a0iJfgAiPpw7rIef/RptnxlWPIf11cDWrBiPJcJcb6z4XYlAhepmUpwSIQ2GFaOttwv7jggLTWJDCo2OuSaZVf4W5pBVbmaMGmxBb/Yvgic2MTSAFywbORq6tbalCEaeY1KOITafN9Yj10w2EqGkN4cQgRLyEtQiUSnCKOl0FfAGlFw9RIkI/X6qUd39Io5P+1hXo87NwsqX6mRrJTUV9OYYIuihT6zFwfT4IlvjSsgxRmM8cfhlIgTEOQO6mf2xRe79mj7+CJZXRg2GYpblXuqNjifeKwL4zUAEQEAEQEAEQEAEQEAEQEAEQEAEQJSLoB9y6Cdt4NAwEeKTRfk0jT31gggfzUgE+TiZscVjzy2OAX4EiACI/xdBfU4vT4Y3fITaPqzLbeD9bCuC3z+/2YtvEsWbNdwRdsviH4uDGCUiqFfFS/uA/bD5V8OafcB+gAiAgAiAeK0IE//eBd7Pa0XwUJw/j14H74WJAH4zEAEQEAEQEAEQEAEQEAF4nu4fzNL5Xyl3akAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                                <uix:NGetText.Text>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">Relative1</mca:CSharpReference>
+                                  </OutArgument>
+                                </uix:NGetText.Text>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <uix:NGetText DisplayName="Get Text 'Jeremy Aar Flint'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="63890258-53c0-46ab-9d49-71db55746272" Version="V1">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.whitepages.com/name/Gary-Cannon/Pittsburgh-PA/Po8MoVrvbNy" DesignTimeRectangle="707, 475, 179, 84" FriendlyName="'Jeremy Aar Flint Age 40s'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='relatives' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='expandable-card relative-card pa-4 pearl td-n card flat' parentid='relatives' tag='DIV' aaname='' /&gt;" Guid="f51ad941-df08-4497-bea5-02fa738dea1c" ImageBase64="" InformativeScreenshot="a4817c9e565e1ff3cab47f52e01ed32b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gary Cannon | Plateau St, Pittsburgh, PA | Whitepages' /&gt;" SearchSteps="Selector, FuzzySelector" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="723, 499, 112, 20" ElementType="Text" FriendlyName="'Jeremy Aar Flint'" FullSelectorArgument="&lt;webctrl aaname='Jeremy Aar Flint' parentid='relatives' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Jeremy Aar Flint' parentid='relatives' tag='DIV' type='' class='' check:innerText='Jeremy Aar Flint' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHQAAAAYCAYAAAArrNkGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIrSURBVGhD7ZdRjoMgEIb3OMZz2R7FpjcxPYnxGk28g08sDFBgZljQ2GyhPHzZFRj4mZ9B+7Ntm2jUQzO0MpqhldEMrYxmaGU0QyujGfofzDfR9TexmOfl3ovuMonVH3MQxtBFjH0vxhm31wEkz0vmW3hOYpA57BDDY9X9zdCTgERfxXB58/7MOtOT6VMgQw8RmeOrDF0fV9HdF/33pIpgKcFQfVVZQrHQJxNlx7yulp1xLnYVk6yisE3F6HZ/fk3OIdSxeowazyc81IvmtEbN9kqNmLLTUJsH22+f4eC9tKDxr/awL8tQvKAW5ATbBdhDsCcO+rk2F8NWF0oQCxpDtCmkEaN/WNDa2igZl6ruMwyV6+CDTHNJ95w2FMThwLBSQADeZG5ckFRGOIrhqkvNQ6s2hKyVcwjYXNCDS7DGB3iacwxNHdrDhkKgL8wRN+ZoHDaPb1Nx7pkaTOHGoH1aGDNCQ1NrSVLjcgxl83mWoYkrJipgd1yeocHc6n+8NiJ8FyE8jaAnMALlokhDsZiMTbACDsVlGgptem41B6myAC7eAEmxGrmKrcBQ+tGhE4KrbbnHBWmOxMXMo4YoncNDfsQwmwr4M7n+3HQd0PephkbWMIaa5KMryOH1G8jGiaFH4mhS+TYJbIhpR8Aa7J40+jo2iTJzWq3j/MEVKoFxoNW1M+/QQshN7pdRrKHs79FGqYZyHzANRXGG2vdG6t35rZT7Dm2wNEOrYhO/MQbuhjmZ8NIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                                <uix:NGetText.Text>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">Relative2</mca:CSharpReference>
+                                  </OutArgument>
+                                </uix:NGetText.Text>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <uix:NGetText DisplayName="Get Text 'Paul C Flint'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="63890258-53c0-46ab-9d49-71db55746272" Version="V1">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://www.whitepages.com/name/Gary-Cannon/Pittsburgh-PA/Po8MoVrvbNy" DesignTimeRectangle="894, 475, 179, 84" FriendlyName="'Paul C Flint Age 40s'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='relatives' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='expandable-card relative-card pa-4 pearl td-n card flat' parentid='relatives' tag='DIV' aaname='' /&gt;" Guid="fc65febb-3f43-4b19-b028-af27f5cbbac1" ImageBase64="" InformativeScreenshot="d09cc5237745b1b3110947f5160de714.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gary Cannon | Plateau St, Pittsburgh, PA | Whitepages' /&gt;" SearchSteps="Selector, FuzzySelector" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                        <uix:Target DesignTimeRectangle="910, 499, 78, 20" ElementType="Text" FriendlyName="'Paul C Flint'" FullSelectorArgument="&lt;webctrl aaname='Paul C Flint' parentid='relatives' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Paul C Flint' parentid='relatives' tag='DIV' type='' class='' check:innerText='Paul C Flint' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAYCAYAAABp76qRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVFhH7ZbRjYMwDEBvHMRcbUcp6iaISSrWqMQOfPlSJyDHpAkmbnU9+eN9QFzHfsRRf+Z5BqMeE6mEiVTCRCphIpUwkUp8XOR4a6G5jcm1t/Lo4dReoH+E53sHDX2uhIgc4dq6JhnXe/yDWiQiMVZQTyq+aTsYn+ufFhkVipvpytwlEptu4TRM8XtXz+YdIZubizxEwlEgL9IhOUF7KOd7XWyJPy1yGi7QnHuYSMxmbJAJ+nPp92WRPF6CSCROG6l/eQ7TsPS49hOmk0J7FZ3IaeiiL4pra9MaIn2O3PjmqBdJ+wm1R4fl4In0iTLjEBWjJzJV6B4w91MGZdlrl0jeK3ciEBkXQr+Gx8tNxfyHE8n7rRCZCqLrVIr+iSyv5/gOkamNEiL5acLmBCJ9zsx1kuE7RPJCQjzd3I89L04o0rFcH5taXD61/5GHRL6+egSjze9Ht+lmc7/RGuOako72CjZOciG80Zj3i3RgnK+HvicijRpMpBImUgkTqYSJVMJEqjDDL/lyP89DMPhOAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                                <uix:NGetText.Text>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">Relative3</mca:CSharpReference>
+                                  </OutArgument>
+                                </uix:NGetText.Text>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                            </Sequence>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                        </TryCatch>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">AgeNum + " " + Relative1 + " " + Relative2 + " " + Relative3</mca:CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                        <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="438,185" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                          <ui:AddDataRow.ArrayRow>
+                            <InArgument x:TypeArguments="s:Object[]">
+                              <mca:CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">new Object[ ] { CurrentRow["loyalty_id"].ToString(), AgeNum.ToString(), Relative1, Relative2, Relative3 };</mca:CSharpValue>
+                            </InArgument>
+                          </ui:AddDataRow.ArrayRow>
+                          <ui:AddDataRow.DataTable>
+                            <InOutArgument x:TypeArguments="sd:DataTable">
+                              <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">dtTable2</mca:CSharpReference>
+                            </InOutArgument>
+                          </ui:AddDataRow.DataTable>
+                        </ui:AddDataRow>
+                        <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="438,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet2" WorkbookPath="C:\Users\quiet\Downloads\test_dataset\test_dataset\customer_df.xlsx">
+                          <ui:WriteRange.DataTable>
+                            <InArgument x:TypeArguments="sd:DataTable">
+                              <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">dtTable2</mca:CSharpValue>
+                            </InArgument>
+                          </ui:WriteRange.DataTable>
+                        </ui:WriteRange>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA76SURBVGhD7ZgJVBVnlseTuERNVHRiFBFFFFR2QaKiIKIi7hr3RKOtyXS2kfRox/Qk4tZJ3CKKAioqikvckLSSaJrlsSObDxEQkAACCorwADXGQNd/7v2q6r0HZOk4PdMz58w953/+994qXv3uV1/Ve/rMPzP69DW3mLfoLd9d+8M1h05GaROzqpF4tRqhp6K1e0LOaxa8/pavad/+Fsrp/3uCwdf6+YdqMqoQl3EbCVlVUOGTtNVI1t5FSvZdpF5j3cO6zQGhpmb/jYN0bd/OxM2km+dma3P/o/ZWEZluDqXFHk66exNccXe8i8R5jKutNsJ5iCZw8ZILlzQFD+MyqxCfWY2UnFokUJ5I4DK8LAZnXcm5h7Tr9xCTUqzznDB1tnLJf0yMNunqyVA33WVYFfiu1wgIebpI1Z7Ooq4ePwIFa9ZCk3EHDJ9AK65Jq8DJ8wlIy61D0tU7Qldy7iMjT0d3oJryGoKvQTort4b6NZgxZ/Fy5fJPHwweM8JGKyAVYD2oHthF6C6BswrWfCjD07aJpwGSsu8hKrkEkyd54+jpaGQUPEJGfgMSM8vxsd8WxGeUE3Atgd9DhgKfmX8fWSTPiU95J/p16mgR7mStaQlqgNXL0wVVns6oGjdcYpXPmYr4hCKx8gwfn3mHVr0e4ZFpsBpsDR9vH6Sm5+JyrBbek6Zg1sw5uFrYILYOD5BpBH/1xn0kpJfo+v7WZ+Its96+BWMcdSpw1ThnSfbhshM0gwt4BlcHIM8KPibD08PKD2x85m1oix5hR0AYpk8cg3PBHyIjchsSI7bD1dEWv1v5b8gt+R5pOXcFvArO0hbcR3ZhLTZtCTyioP16rBlgul6GMVpZdkV3PAz1nXGyaEChsjk+RvDKm+ZqFa7k6nDx21R8tf+PWP/B63h3+Vyc2e+H0C9WYe2fNiOv7Ae6A3f18Cp4dgGJ/FpRLcz6/R13Yc2APusFnBGkkAIoAw+X5SH7bXcnSdTkuZ9slF+T6iuSXo+sRHpgc0ufYOOGz/ByL1NYW9thuL09IsL8kXm9kp6HWoKvaQnP4KQcgs8pqsPS5e98oGD+dKzu32c9Q6gr2waaQQmagW+7O8o5DyHcSeTpp76VEmmAJBqAwflNw+/3FFJ6bi09yMWYN8MH7iNdsHjxG4hNLUF2UaPYOjK8AZxXncGv35QVeuJinILaNt7s+7IvgzKEWFEFTpaTAkka6yipsMq5LZQSdU2/+qnXagRwTMp3BH8fmQUP6OG+As2pDTgdsApRMcli62TmVgtwY3ix6gp4Lqu4DuEX4rUKbsvgt80NN3sdgxtDq6CVChy7EA2h5io49UStfrPy6vO3a2RMLs5fykBUUhH+Srp4fAc0J9fhy53vITWrGFdvPoKWVj5bbJu6Fquugud9x9Ihn6Qgt4xvna21Akqsrgyswql55RgHPi6DjpXrCqVX4Ua5cHtJ/VnAX0oJmZU493Uazkam4kzkFZwOv4zokxsRHuiL0C1vIzs9DjnZ2Qp4g36vC3gCF/AkBr9RIktBNkRPj/7LLy8cJUMqqyhchVOk5vreGAfc9hmL+t3b8H1CLJru3AYH72Xe87xlNGmlOH0hmYZIRfg3NMiFJJwPWY+Qja/hXNAa5GqCcT02CNdTwpGT9x2B1xtWXaw8rboCXlBaj798k5itYBvCbrd36bIdU2QwWkFjaBmU5SBUTsfL3RxQ6TMGDYeC8bfGRgFtHLl00VT6PZPKX0o0zMWYbJwh8PDIFJy5mIaD/n7Y+9GrCNn2AfISQnE97hANEYjrCccIvpbA5a0ig9cL8IKyehSWNeDY6ciWD7GJi+ks55NzwAp6x0MMoMIKYNZouVc+2k5iVc3z0a82R+NjCZHZT7Dz8mP88dQjBH1DW4HeNtfoDlzLr6PfNdVigGNno3D0rAb7ArZh7TIvbFyzAsVXjiJHE6JXXmEFgTcSeJ1+1QsV+KJbDVi+8t2Wr1HLP4yKGH5ituR8Yg7GHp6JG15OtMoKLLubvV63RtlJd+a2hP8y9Qm8Pm+A64Z6uK6XNW57LQ7mlyI8vwKxBfeQoC3HwSNfISDgCPx3huIzv4343YxXEPjZKhRdCUN2zH5oo4KRExOEgoKbNMAD5BffpwFqaQCdGIDhb5Y3oJ/5AMMXWbvOHUyGH58NVU7HZ0lbVrlLt0YTLIuAhURuK1yF51X/fehDjCDgn9KErwswKz8DCwu0WJyehHnhZ7DoaCiW7gvByq3b8PpMd5wJXItbyQeRp9mPm6m0lTSByM5Kwa37wO06CRW1QNm9JhTffoTC8nps3Rnc8qdEd2fT2QRN4AR/bJYYwvHYTCl9khPB2qlDoGwkw9uh/mCQgOf418MP4eJXT9IJZ2g1Z43cWoO52VrMzc/CqzeyMDsvA1PT4uAd+zUmXorA4iXTsWLfdpyKP4H48zuwZ9P7+P3CGVjgMwm+K97E9g2f4tSRL5EYnYrCvAqUFFU9MDdefQ6z1+x2MbhjGA1B7hA2Q3IMm4klW7wFdNkoW8iyQ+WcyQo6sC/2MZwJtrUY3Lh2P1CJ+TeuYj4NIfyGFvNzMzAzMwkLgndg+uWvMDlFg9nkXsdDMfnwfkzbtweT/LfC689+mPDJh5i2bTPevnwBuwPmX1CwDTHoozEaBnaiAdjtj06XHI/OBOviqyNk+JG2KCXVbPpYwQem7WzA8HU6WQSql9ozOuZxuFzAz6MhWGIQ2lbzb+ZgYaEWCyifV3QNi8rysbDsBhbcuoGFFYVYVFlEXkR1Af6a9TbOfd43QsE2hNWmcVqHozNgkDwEa8JeH6nEdZhUOtIG7I+z0gV8bP6PcFIA2f8ejdlfiTnZ8p1QB9EPpGheXqYsukOqll6PR0raa2hKtpKKzw4sUbANYRs4RWd/ZAbsj0yHA7ndEYKnnHt2R6ZJu1eOkkpfoQFI6vt+2zePCKoOjp+QyDlnSDln4J/uu2y5C+/IQhlW3Vac5xvujrECtDtxJ9UNTUmDpaYkK9RcsqxTsA1hH0qwxmJ4o3rkvilSjpsN3QkbAc+x8lAjHAiexXAstRa9n8jFsEru8vldvBlVAb+yIqwpyVeejatYff081uUcky5k+hL4aDQnDyZ4S6k5aRCEqFawDWFHkAZNg91hEuW2h6dKNiTOP/IdIxW7DJEUfvieeKAHtG/lat66VnO1XnHQ8O3NkLIGEqylDCtcUbIlmhJZFpKCbYhhe711tgRtc3iKxPC2h6YSPDn3Dk2R1DrKx5He/5Xiglu/fgS7j2th/zHB6NW6JjEsuXqundGxLfQZIn6ooAEsGJ5gBxLkAJE3Jcq12mOvuWSuU7ANYbXNs3SYEahwRdxn2VC+cNN4PNREiWtGZP0goBhIdlm2ilofk3stz43JfyI+S6pPVQAt0JxowavMteL9pWbK5f4AZBw2bfvvgH7vOUcwoM3BKbTi5Eo+7KCPNJQk+gflnuakv7gofwOP3qzTA+v1H4bc5hfySdvrxedwNBf+uyQD9ydQhmWXxb2mhH50nJRgjuiAXhoF2xC9Fw3bxbAMOSyEYQmefGjIZEl1FvfHH5gtNT55KC4clvxYwOilwP2chqk5nRcY8734DI7m9NEEKkM2J5oTsJkMLPJ+ci28H754v/suBdsQna17jht6wAcsBh4Wwm6Q3Ddob9Zx5dLAGyENBHZfwMlqnasyHFtGf6PG38p2EJwBUFZfqSmexJ5ghmZSU7ypyGe5d5qlYBuiXef2Jtb+E+rUIYYc8JaGHpgsctknY8h+b8maxD3X0LmobKwWALyVeIihf7rfVgTcusfn8t+IeFyBujjeIgzXl0D7EmgfkbOrtXCRm8LkhWdNFOyWYb7aVTNk/2QISHLOBbySq1Jrr5Nv6Ifg2BP9Pby21mEIQaoaSqut5q4ba3EkybBtKhurkKIZT9CmCjR7b1p5Vh/uGdW9aYg+CP+0+1cKbtvoYtXDc8g+b1jtmyQJWMpZ1opzn6XWfI7n8SUSgxhHVN4TfBr5EEsP1OPdsEaRn898bFh1Ch58yZmFCmRr9ZYV10tqFvnLSu9lzBr7fNvtYxxmf3DRMKAKKfLgSUJWwRMl62C1p/SV4wEZYQraL0fjDw/Euc6HZ0m3ommvMxyBypCcvyTyZrkvK74X1b1QfKpn299AraMz3QUrAhocNFFitwqS4QcHTRD1IHJ9HTRRHFePjT++BGtjt+PK7WxUGG0tzqNKkvHnxCA4H5rNn401J52lprh/IVgFUohqoZcoN6g5Xvalk59fpmD+cvBdkOEUwMCJ4qJqLUPLNR8TruRyXzlHOTYocIJk/BnO+8ajLIoeyLieDGzkRrmmJ6mHJBTXE9H+3dq++38uOvTsbDFwh0edelHhrWS510uGCpxglMv1oL1yT3X1+KBAued/xkZAMVyzcBMGZXg5Z4+jWvR6oOZid51F7+d+/T9yjcPE09yXL8ZAKhzXas/YjTW4Va3Kcs94Ae9xYKwMRmoWkN0J3oTBhZrj1Lybvr9qXkdfBeu3RY+pFust93gRAEk4w3hhIMNQzS5y6qu5eozFf8s1u6ozEYPQFEtwsd3RrOku8h9juxIsA3dTelx3x4+xL0p+yzquV3CeLnr4DNxgDGAZMJ5kyC0CPA2Aam3kQuKYFxYddpXhYruRvyg7QYtc01UAs6u137IO/zV4NUymWKwfSCCqLHZ7SsIJcuBupb/bU39c31NksXucxCr7lh7Q2BcJ8AVyBmZ/ET/GdFH6LM5fwLo3Om5QLv+Pia7jzHzNPx+jG0AgLIYU+S45p6GEDD2qd9FQSn91mD2Dt1Fzi7oLai500b0/p93T7flfi/Y9Oln0fs9Rw2D9d3kIUM6N1d/fQ+JjnNNxUbsFjpLKLtMDG9OF1FkisROw4kKdpOidHTUWvZ/9bW+bp4kXXum9zGzdyNIB/uPAYkhzf3eJXe0J0QDsB07Tv65iOtFWeZ6c1YmAVe9I4B00Hg7PeSof/z8XXexemt1rhW2E+RfuApxdzj3Qf6cHwXvAbe8ohm2jmr900EXv+CeBt47nOrU34WFMZln693rHXtNntbPW/FM3HQ9x6qwZwbbXFZ1oX3puY/uIL95tt8vD4VlPky4/85P4/+P/VDzzzH8CF5+DuNu9I5AAAAAASUVORK5CYII=" InformativeScreenshot="6d2eb543153415cf53fc9ebbbf6a699f.png" Selector="&lt;html app='chrome.exe' title='Whitepages - Official Site | Find People, Phone Numbers, Addresses &amp;amp; More' /&gt;" Url="https://www.whitepages.com/" />
+                  </uix:NApplicationCard.TargetApp>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NApplicationCard>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+        <ui:ForEachRow.DataTable>
+          <InArgument x:TypeArguments="sd:DataTable">
+            <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">dtTable1</mca:CSharpValue>
+          </InArgument>
+        </ui:ForEachRow.DataTable>
+      </ui:ForEachRow>
+    </Sequence>
+  </Sequence>
+</Activity>
